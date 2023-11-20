@@ -43,6 +43,9 @@ section .data
 section .text
 _start:
 	run_game:
+	mov rax,0
+	mov [count_correct],rax
+	mov [count_wrong],rax
 	mov rax,96
 	mov rdi,start_time_seconds
 	mov rsi,temp5
